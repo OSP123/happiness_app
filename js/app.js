@@ -4,6 +4,10 @@ $( document ).ready(function() {
 			{ quality: 50,
     		  destinationType: Camera.DestinationType.FILE_URI,
     		  allowEdit: true,
+			  sourceType: Camera.PictureSourceType.CAMERA,
+			  encodingType: Camera.EncodingType.JPEG,
+			  cameraDirection: 1,
+			  saveToPhotoAlbum: true
     	    }
     	);
 	})
@@ -17,4 +21,6 @@ $( document ).ready(function() {
 	    alert('Failed because: ' + message);
 	}
 })
+
+
 

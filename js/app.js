@@ -1,8 +1,9 @@
 $( document ).ready(function() {
+	$("#camera_button").click(function(){
+		navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
+    	destinationType: Camera.DestinationType.FILE_URI });
+	})
 	
-	navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
-    destinationType: Camera.DestinationType.FILE_URI });
-
 	function onSuccess(imageURI) {
 	    var image = document.getElementById('myImage');
 	    image.src = imageURI;

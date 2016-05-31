@@ -1,4 +1,4 @@
-document.ready(function(){
+$( document ).ready(function() {
 	
 	navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
     destinationType: Camera.DestinationType.FILE_URI });

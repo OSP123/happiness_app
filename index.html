@@ -18,11 +18,6 @@
 			display:block;
 			width: 100%;
 		}
-		#qrcode {
-			display:block;	
-			margin-left: auto;
-			margin-right:auto;
-		}
 		#map2 {
 			margin-left: auto;
 			margin-right:auto;
@@ -37,7 +32,6 @@
 	<script src="js/leaflet.js"></script>
 	<script src="js/app.js"></script>
 	<script src="phonegap.js"></script>
-	<script src="barcodescanner.js"></script>
 
 </head>
 	
@@ -49,7 +43,7 @@
 			<li><a href="#currentExhibits" >Current Exhibits</a></li>
 			<li><a href="#pastExhibits">Past Exhibits</a></li>
 			<li><a href="">Calendar of Events</a></li>
-			<li><a href="#discoverScreen">[ Discover ]</a></li>
+			<li><a href="#camera">Take a Picture</a></li>
 
 		</ul>
 		<div class="ui-grid-a center">
@@ -131,16 +125,16 @@
 	</div>
 </div>
 
-<div id="discoverScreen" data-role="page">
+<div id="camera" data-role="page">
 	<header data-role="header" data-position="fixed" data-id="appHeader">
 		<h1>SAMOCA</h1>
 		<a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
 	</header>
 	<div data-role="content">
-		<img id="qrcode" src="imgs/qr.png" />
-		<h3 class="center">Discover More Exciting Stories</h3>
-		<p class="center">Any time you see this QR code, scan it using the Discover button to see additional content from SAMOCA.</p>
-		<a id="qrScanBtn" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-search">Discover</a>
+	<img class="center banner" src="imgs/camera.svg" />
+		<h3 class="center">Camera</h3>
+		<p class="center">Take a selfie or a normal-person picture at the museum and share with friends :)</p>
+		<a id="camera_button" class="ui-btn ui-shadow ui-corner-all">Click To Take Picture</a>
 	</div>
 </div>
 

@@ -1,7 +1,12 @@
 $( document ).ready(function() {
-	$("#camera_button").click(function(){
-		navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
-    	destinationType: Camera.DestinationType.FILE_URI });
+	$("#camera_button").bind('touchstart', function(){
+		navigator.camera.getPicture(onSuccess, onFail, 
+			{ quality: 50,
+    		  destinationType: Camera.DestinationType.FILE_URI,
+    		  allowEdit: true,
+    		  saveToPhotoAlbum: true
+    	    }
+    	);
 	})
 	
 	function onSuccess(imageURI) {

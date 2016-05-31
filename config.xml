@@ -6,10 +6,11 @@
 		version   = "1.0">
 		<name>Happiness App</name>
 		<description>
-A sample app for Up and Running with PhoneGap Build		</description>
+			A sample app for Up and Running with PhoneGap Build		
+		</description>
 		<author href="chrisgriffith.wordpress.com" email="chris.griffith@gmail.com">
-Chris Griffith
+			Chris Griffith
 		</author>
-		
-		<gap:plugin name="org.apache.cordova.splashscreen"  />
+
+		<plugin name="org.apache.cordova.camera" spec="0.3.6" source="pgb" />
 	</widget>

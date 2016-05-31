@@ -1,23 +1,15 @@
-// Wait for PhoneGap to load
-document.addEventListener("deviceready", onDeviceReady, false);
+document.ready(function(){
+	
+	navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
+    destinationType: Camera.DestinationType.FILE_URI });
 
-// PhoneGap is ready
-function onDeviceReady() {
-	$( "#qrScanBtn" ).click(function() {
-  		doScan();
-	});
-}
+	function onSuccess(imageURI) {
+	    var image = document.getElementById('myImage');
+	    image.src = imageURI;
+	}
 
-function doScan(){
-	cordova.plugins.barcodeScanner.scan(
-		function (result) {
-			alert("We got a barcode\n" +
-				"Result: " + result.text + "\n" +
-				"Format: " + result.format + "\n" +
-				"Cancelled: " + result.cancelled);
-	  	}, 
-	  	function (error) {
-			alert("Scanning failed: " + error);
-	  	}
-	);	
-}
+	function onFail(message) {
+	    alert('Failed because: ' + message);
+	}
+})
+

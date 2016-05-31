@@ -7,7 +7,6 @@ $( document ).ready(function() {
 			  sourceType: Camera.PictureSourceType.CAMERA,
 			  encodingType: Camera.EncodingType.JPEG,
 			  cameraDirection: 1,
-			  saveToPhotoAlbum: true
     	    }
     	);
 	})

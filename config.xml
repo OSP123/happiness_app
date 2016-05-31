@@ -11,7 +11,8 @@
 		<author href="chrisgriffith.wordpress.com" email="chris.griffith@gmail.com">
 			Chris Griffith
 		</author>
-
-		<plugin name="org.apache.cordova.camera" spec="0.3.6" source="pgb" />
 		<feature name="http://api.phonegap.com/1.0/file"/>
+		
+		<plugin name="org.apache.cordova.camera" spec="0.3.6" source="pgb" />
+
 	</widget>

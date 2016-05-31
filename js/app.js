@@ -4,7 +4,6 @@ $( document ).ready(function() {
 			{ quality: 50,
     		  destinationType: Camera.DestinationType.FILE_URI,
     		  allowEdit: true,
-    		  saveToPhotoAlbum: true
     	    }
     	);
 	})
